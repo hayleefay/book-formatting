@@ -4,21 +4,37 @@
         <link rel="icon" href="http://i.imgur.com/Sh8otRn.jpg" type="image/gif">
         <title>Public Press</title>
         <style>
+            *{box-sizing:border-box;}
             body{
-                text-align:center;
                 background:url("http://i.imgur.com/MDX0Ekw.jpg") center center no-repeat fixed;
                 color:black;
                 font-family:Helvetica;
                 background-size:cover;
             }
+            div{
+                display:inline-block;
+            }
             .center{
                 text-align:center;
+            }
+            .box{
+                border:1px solid black;
+                background-color:white;
+                padding:5px
+            }
+            .leftdiv{
+                width:60%;
+            }
+            .rightdiv{
+                width:39%;
+                font-weight:bold;
+                padding:5px
             }
         </style>
     </head>
     <body>
         <h1>Public Press</h1>
-        <div id="paragraph">
+        <div class="box leftdiv" id="paragraph">
             <p>Sir Walter Elliot, of Kellynch Hall, in Somersetshire, was a man who,
             for his own amusement, never took up any book but the Baronetage; there
             he found occupation for an idle hour, and consolation in a distressed
@@ -36,7 +52,32 @@
             June 1, 1785; Anne, born August 9, 1787; a still-born son, November 5,
             1789; Mary, born November 20, 1791."</p>
         </div>
-        <button type="button" name="decreasebutton" onclick="getElementById('paragraph').style.fontSize='8px'" >Decrease Font Size</button>
-        <button type="button" name="increasebutton" onclick="getElementById('paragraph').style.fontSize='24px'">Increase Font Size</button>
+        <div class="rightdiv">
+            <p>What font size would you like?</p>
+            <form>
+                <input type="radio" name="fontsize" value="10px" onclick="getElementById('paragraph').style.fontSize='0.625em'">10
+                <input type="radio" name="fontsize" value="12px" onclick="getElementById('paragraph').style.fontSize='0.75em'">12
+                <input type="radio" name="fontsize" value="14px" onclick="getElementById('paragraph').style.fontSize='0.875em'">14
+                <input type="radio" name="fontsize" value="16px" onclick="getElementById('paragraph').style.fontSize='1em'">16
+                <input type="radio" name="fontsize" value="20px" onclick="getElementById('paragraph').style.fontSize='1.25em'">20
+                <input type="radio" name="fontsize" value="24px" onclick="getElementById('paragraph').style.fontSize='1.5em'">24
+                <input type="radio" name="fontsize" value="30px" onclick="getElementById('paragraph').style.fontSize='1.875em'">30
+            </form>
+            <p>What font would you like?</p>
+            <form>
+                <div>
+                <input type="radio" name="font" value="Arial" onclick="getElementById('paragraph').style.fontFamily='Arial'">Arial
+                </div>
+                <div>
+                <input type="radio" name="font" value="Gloucester" onclick="getElementById('paragraph').style.fontFamily='Cursive'">Cursive
+                </div>
+                <div>
+                <input type="radio" name="font" value="Times" onclick="getElementById('paragraph').style.fontFamily='Times'">Times New Roman
+                </div>
+                <div>
+                <input type="radio" name="font" value="Courier" onclick="getElementById('paragraph').style.fontFamily='Courier'">Courier
+                </div>
+            </form>
+        </div>
     </body>
 </html>
