@@ -3,11 +3,14 @@
     <head>
         <link rel="icon" href="http://i.imgur.com/Sh8otRn.jpg" type="image/gif">
         <title>Public Press</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+    <div class="container">
+    <div class="row">
         <h1>Public Press</h1>
-        <div class="box leftdiv" id="paragraph">
+        <div class="box col-md-5" id="paragraph">
             <p class="indent">Sir Walter Elliot, of Kellynch Hall, in Somersetshire, was a man who,
             for his own amusement, never took up any book but the Baronetage; there
             he found occupation for an idle hour, and consolation in a distressed
@@ -70,33 +73,24 @@
             and maintenance of the good principles and instruction which she had
             been anxiously giving her daughters.</p>
         </div>
-        <div class="rightdiv">
-            <p>What font size would you like?</p>
-            <form>
-                <input type="radio" name="fontsize" value="10px" id="fontSize10">10
-                <input type="radio" name="fontsize" value="12px" id="fontSize12">12
-                <input type="radio" name="fontsize" value="14px" id="fontSize14">14
-                <input type="radio" name="fontsize" value="16px" id="fontSize16" checked>16
-                <input type="radio" name="fontsize" value="20px" id="fontSize20">20
-                <input type="radio" name="fontsize" value="24px" id="fontSize24">24
-                <input type="radio" name="fontsize" value="30px" id="fontSize30">30
-            </form>
-            <p>What font would you like?</p>
-            <form>
-                <div>
-                <input type="radio" name="font" value="Arial" onclick="getElementById('paragraph').style.fontFamily='Arial'" checked>Arial
-                </div>
-                <div>
-                <input type="radio" name="font" value="Gloucester" onclick="getElementById('paragraph').style.fontFamily='Cursive'">Cursive
-                </div>
-                <div>
-                <input type="radio" name="font" value="Times" onclick="getElementById('paragraph').style.fontFamily='Times'">Times New Roman
-                </div>
-                <div>
-                <input type="radio" name="font" value="Courier" onclick="getElementById('paragraph').style.fontFamily='Courier'">Courier
-                </div>
-            </form>
+        <div class="col-md-7">
+            <p class="padit">What font size would you like?</p>
+            <button type="button" class="btn btn-success" name="fontsize" id="fontSize10">10</button>
+            <button type="button" class="btn btn-success" name="fontsize" id="fontSize12">12</button>
+            <button type="button" class="btn btn-success" name="fontsize" id="fontSize14">14</button>
+            <button type="button" class="btn btn-success" name="fontsize" id="fontSize16">16</button>
+            <button type="button" class="btn btn-success" name="fontsize" id="fontSize20">20</button>
+            <button type="button" class="btn btn-success" name="fontsize" id="fontSize24">24</button>
+            <button type="button" class="btn btn-success" name="fontsize" id="fontSize30">30</button>
+            <p class="padit">What font would you like?</p>
+            <button type="button" class="btn btn-primary" name="font" value="Arial" onclick="getElementById('paragraph').style.fontFamily='Arial'" checked>Arial</button>
+            <button type="button" class="btn btn-primary" name="font" value="Gloucester" onclick="getElementById('paragraph').style.fontFamily='Cursive'">Cursive</button>
+            <button type="button" class="btn btn-primary" name="font" value="Times" onclick="getElementById('paragraph').style.fontFamily='Times'">Times New Roman</button>
+            <button type="button" class="btn btn-primary" name="font" value="Courier" onclick="getElementById('paragraph').style.fontFamily='Courier'">Courier</button>
         </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="index.js"></script>
+    </div>    
+    </div>    
     </body>
 </html>
