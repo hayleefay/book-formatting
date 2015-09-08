@@ -29,5 +29,6 @@ body{
     text-indent:20px;
 }
 .padit{
-    padding:10px;
+    padding-top:10px;
+    margin:0px;
 }
