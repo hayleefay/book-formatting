@@ -9,8 +9,7 @@
     <body>
     <div class="container">
     <div class="row">
-        <h1>Public Press</h1>
-        <a href="home.html">Build Your Book</a>
+        <h1>Public Press <small><a href="index.html">Home</a></small></h1>
         <div class="box col-md-5" id="paragraph">
             <p class="indent">Sir Walter Elliot, of Kellynch Hall, in Somersetshire, was a man who,
             for his own amusement, never took up any book but the Baronetage; there
@@ -76,13 +75,29 @@
         </div>
         <div class="col-md-7">
             <p class="padit">What font size would you like?</p>
-            <button type="button" class="btn btn-success" name="fontsize" id="fontSize10">10</button>
-            <button type="button" class="btn btn-success" name="fontsize" id="fontSize12">12</button>
-            <button type="button" class="btn btn-success" name="fontsize" id="fontSize14">14</button>
-            <button type="button" class="btn btn-success" name="fontsize" id="fontSize16">16</button>
-            <button type="button" class="btn btn-success" name="fontsize" id="fontSize20">20</button>
-            <button type="button" class="btn btn-success" name="fontsize" id="fontSize24">24</button>
-            <button type="button" class="btn btn-success" name="fontsize" id="fontSize30">30</button>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-success">
+                <input type="radio" name="fontSize" id="fontSize10" autocomplete="off">10
+              </label>
+              <label class="btn btn-success">
+                <input type="radio" name="fontSize" id="fontSize12" autocomplete="off">12
+              </label>
+              <label class="btn btn-success">
+                <input type="radio" name="fontSize" id="fontSize14" autocomplete="off">14
+              </label>
+              <label class="btn btn-success active">
+                <input type="radio" name="fontSize" id="fontSize16" autocomplete="off" checked>16
+              </label>
+              <label class="btn btn-success">
+                <input type="radio" name="fontSize" id="fontSize20" autocomplete="off">20
+              </label>
+              <label class="btn btn-success">
+                <input type="radio" name="fontSize" id="fontSize24" autocomplete="off">24
+              </label>
+              <label class="btn btn-success">
+                <input type="radio" name="fontSize" id="fontSize30" autocomplete="off">30
+              </label>
+            </div>
             <p class="padit">What font would you like?</p>
             <button type="button" class="btn btn-primary" name="font" value="Arial" onclick="getElementById('paragraph').style.fontFamily='Arial'" checked>Arial</button>
             <button type="button" class="btn btn-primary" name="font" value="Gloucester" onclick="getElementById('paragraph').style.fontFamily='Cursive'">Cursive</button>
