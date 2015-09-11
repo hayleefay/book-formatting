@@ -76,41 +76,41 @@
         <div class="col-md-7">
             <p class="padit">What font size would you like?</p>
             <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-success">
-                <input type="radio" name="fontSize" id="fontSize10" autocomplete="off">10
+              <label class="btn btn-success changeSize" data-fontSize="0.625em">
+                <input type="radio" name="fontSize" autocomplete="off">10
               </label>
-              <label class="btn btn-success">
-                <input type="radio" name="fontSize" id="fontSize12" autocomplete="off">12
+              <label class="btn btn-success changeSize" data-fontSize="0.75em">
+                <input type="radio" name="fontSize" autocomplete="off">12
               </label>
-              <label class="btn btn-success">
-                <input type="radio" name="fontSize" id="fontSize14" autocomplete="off">14
+              <label class="btn btn-success changeSize" data-fontSize="0.875em">
+                <input type="radio" name="fontSize" autocomplete="off">14
               </label>
-              <label class="btn btn-success active">
-                <input type="radio" name="fontSize" id="fontSize16" autocomplete="off" checked>16
+              <label class="btn btn-success changeSize active" data-fontSize="1em">
+                <input type="radio" name="fontSize" autocomplete="off" checked>16
               </label>
-              <label class="btn btn-success">
-                <input type="radio" name="fontSize" id="fontSize20" autocomplete="off">20
+              <label class="btn btn-success changeSize" data-fontSize="1.25em">
+                <input type="radio" name="fontSize" autocomplete="off">20
               </label>
-              <label class="btn btn-success">
-                <input type="radio" name="fontSize" id="fontSize24" autocomplete="off">24
+              <label class="btn btn-success changeSize" data-fontSize="1.5em">
+                <input type="radio" name="fontSize" autocomplete="off">24
               </label>
-              <label class="btn btn-success">
-                <input type="radio" name="fontSize" id="fontSize30" autocomplete="off">30
+              <label class="btn btn-success changeSize" data-fontSize="1.875em">
+                <input type="radio" name="fontSize" autocomplete="off">30
               </label>
             </div>
             <p class="padit">What font would you like?</p>
             <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-primary">
-                    <input type="radio" name="font" value="Arial" onclick="getElementById('paragraph').style.fontFamily='Arial'" autocomplete="off" checked>Arial
+                <label class="btn btn-primary changeFont active" data-font="Arial">
+                    <input type="radio" name="font" autocomplete="off" checked>Arial
                 </label>
-                <label class="btn btn-primary">
-                    <input type="radio" name="font" value="Cursive" onclick="getElementById('paragraph').style.fontFamily='Cursive'" autocomplete="off">Cursive
+                <label class="btn btn-primary changeFont" data-font="Cursive">
+                    <input type="radio" name="font"  autocomplete="off">Cursive
                 </label>
-                <label class="btn btn-primary">
-                    <input type="radio" name="font" value="Times" onclick="getElementById('paragraph').style.fontFamily='Times'" autocomplete="off">Times New Roman
+                <label class="btn btn-primary changeFont" data-font="Times">
+                    <input type="radio" name="font" autocomplete="off">Times New Roman
                 </label>
-                <label class="btn btn-primary">
-                    <input type="radio" name="font" value="Courier" onclick="getElementById('paragraph').style.fontFamily='Courier'" autocomplete="off">Courier
+                <label class="btn btn-primary changeFont" data-font="Courier">
+                    <input type="radio" name="font" autocomplete="off">Courier
                 </label>
             </div>
         </div>
